@@ -1,0 +1,9 @@
+server:
+  port: 10086
+spring:
+  application:
+    name: eurekaserver # Eureka本身自己也是个微服务，所以它也有属于自己的服务名称：eurekaserver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka/
