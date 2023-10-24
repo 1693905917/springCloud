@@ -24,6 +24,8 @@ public class UserController {
     private String dateformat;
     @Autowired
     private PatterProperties patterProperties;
+
+
     /**
      * 路径： /user/110
      *
@@ -39,5 +41,8 @@ public class UserController {
     public String now(){
         return LocalDateTime.now().format(DateTimeFormatter.ofPattern(patterProperties.getDateformat()));
     }
-
+    @GetMapping("/prop")
+    public PatterProperties properties(){
+        return patterProperties;
+    }
 }

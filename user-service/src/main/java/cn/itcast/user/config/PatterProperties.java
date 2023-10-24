@@ -17,4 +17,5 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "pattern")
 public class PatterProperties {
     private String dateformat;
+    private String envSharedValue;
 }
