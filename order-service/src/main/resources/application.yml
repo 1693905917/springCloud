@@ -6,13 +6,15 @@ spring:
     username: root
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
-  application:
-    name: orderservice
-  cloud:
-    nacos:
-      server-addr: localhost:8848 #nacos 服务端地址
-      discovery:
-        cluster-name: HZ
+#  application:
+#    name: orderservice
+#  cloud:
+#    nacos:
+#      server-addr: localhost:8848 #nacos 服务端地址
+#      discovery:
+#        cluster-name: HZ
+#        namespace: af2db1b1-b457-476d-9e63-8d5d6105135b
+#        ephemeral: false
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
